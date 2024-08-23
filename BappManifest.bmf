@@ -1,0 +1,13 @@
+Uuid: 5de3ecc589594010bb6cda98c13c990c
+ExtensionType: 1
+Name: DPoP Authenticator
+RepoName: dpop-authenticator
+ScreenVersion: 1.0
+SerialVersion: 3
+MinPlatformVersion: 0
+ProOnly: False
+Author: Serhat Cicek
+ShortDescription: Dynamically add or update the DPoP (Demonstrating Proof of Possession) HTTP header to outgoing HTTP requests based on configured criteria.
+EntryPoint: build/libs/dpop-authenticator-1.0.jar
+BuildCommand: ./gradlew jar
+SupportedProducts: Pro, Community
