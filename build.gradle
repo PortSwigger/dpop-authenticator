@@ -18,3 +18,10 @@ compileJava {
     targetCompatibility '1.8'
     sourceCompatibility '1.8'
 }
+
+jar {
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
